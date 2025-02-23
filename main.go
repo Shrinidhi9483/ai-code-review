@@ -13,29 +13,6 @@ import (
 	lm "github.com/Shrinidhi9483/ai-code-review/llama"
 )
 
-// type PullRequestEvent struct {
-// 	Action      string      `json:"action"`
-// 	PullRequest PullRequest `json:"pull_request"`
-// }
-
-// type Head struct {
-// 	SHA string `json:"sha"`
-// }
-
-// type PullRequest struct {
-// 	Number int  `json:"number"`
-// 	Base   Base `json:"base"`
-// 	Head   Head `json:"head"`
-// }
-
-// type Base struct {
-// 	Repo Repo `json:"repo"`
-// }
-
-// type Repo struct {
-// 	FullName string `json:"full_name"`
-// }
-
 func webhookHandler(w http.ResponseWriter, r *http.Request) {
 	log.Println("Recieved request on webhook")
 
